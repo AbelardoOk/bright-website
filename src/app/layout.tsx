@@ -1,16 +1,24 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Header } from "@/components/header";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const HagoFont = localFont({
+  src: "./fonts/Hago-Regular.woff",
+  variable: "--font-hago",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+
+const MatroskaFont = localFont({
+  src: "./fonts/Matroska.woff",
+  variable: "--font-matroska",
   weight: "100 900",
+});
+
+const FuturaFont = localFont({
+  src: "./fonts/FuturaLT.woff",
+  variable: "--font-futura",
+  weight: "500",
 });
 
 export const metadata: Metadata = {
@@ -24,10 +32,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${MatroskaFont.variable} ${HagoFont.variable} ${FuturaFont.variable}antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
