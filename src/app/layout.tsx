@@ -6,7 +6,7 @@ import { Header } from "@/components/header";
 const HagoFont = localFont({
   src: "./fonts/Hago-Regular.woff",
   variable: "--font-hago",
-  weight: "100 900",
+  weight: "100 700 900",
 });
 
 const MatroskaFont = localFont({

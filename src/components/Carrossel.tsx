@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Carrossel() {
   return (
-    <div className="inline-flex h-full w-full flex-nowrap overflow-hidden rounded-lg [&_img]:h-[76vh] [&_img]:w-fit">
+    <div className="inline-flex h-full w-full flex-nowrap overflow-hidden rounded-lg shadow-lg [&_img]:h-[76vh] [&_img]:w-fit">
       <ul className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-2">
         <li>
           <Image src={"/site1.png"} alt="site1" width={1440} height={820} />
