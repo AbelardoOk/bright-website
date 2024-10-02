@@ -13,6 +13,37 @@ const config: Config = {
         sans: "var(--font-futura)",
         alt: "var(--font-matroska)",
       },
+      animation: {
+        "text-slide":
+          "text-slide 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite",
+        "infinite-scroll": "infinite-scroll 55s linear infinite",
+      },
+      keyframes: {
+        "text-slide": {
+          "0%, 16%": {
+            transform: "translateY(0%)",
+          },
+          "20%, 36%": {
+            transform: "translateY(-16.66%)",
+          },
+          "40%, 56%": {
+            transform: "translateY(-33.33%)",
+          },
+          "60%, 76%": {
+            transform: "translateY(-50%)",
+          },
+          "80%, 96%": {
+            transform: "translateY(-66.66%)",
+          },
+          "100%": {
+            transform: "translateY(-83.33%)",
+          },
+        },
+        "infinite-scroll": {
+          from: { transform: "translate(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
   plugins: [],
