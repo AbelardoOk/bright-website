@@ -21,7 +21,7 @@ export function Carrossel() {
         </li>
       </ul>
       <ul
-        className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8"
+        className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-2"
         aria-hidden="true"
       >
         <li>

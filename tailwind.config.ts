@@ -16,7 +16,7 @@ const config: Config = {
       animation: {
         "text-slide":
           "text-slide 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite",
-        "infinite-scroll": "infinite-scroll 55s linear infinite",
+        "infinite-scroll": "infinite-scroll 60s linear infinite",
       },
       keyframes: {
         "text-slide": {

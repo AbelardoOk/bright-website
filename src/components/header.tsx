@@ -8,7 +8,7 @@ export function Header() {
       </a>
       <Image
         className="h-full w-fit animate-pulse"
-        src={"/icon.png"}
+        src={"/icone.png"}
         width={1080}
         height={1080}
         alt="Logo"
